@@ -1,0 +1,214 @@
+body {
+    background-color: blanchedalmond; /* Cor de fundo da página */
+}
+
+/* Início da estilização do cabeçalho */
+.cabecalho {
+    position: fixed;
+    display: inline-block;
+    top: 0;
+    left: 0;
+    background-color: rgb(109, 106, 106);
+    margin: 0;
+    height: 90px;
+    width: 100%;
+}
+
+/* Orientação da lista e menu */
+#menu {
+    position: fixed;
+    top: 2px;
+    left: 15px;
+    display: flex;
+    height: 90px;
+}
+
+/* Estilo da lista de menu */
+.listaMenu {
+    display: block;
+    text-align: center;
+    top: 9px;
+    position: relative;
+    text-transform: uppercase;
+    transition: 0.5s;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 25px;
+}
+
+.listaMenu li {
+    display: inline-block;
+    margin-right: 90px;
+    text-decoration: none;
+}
+
+ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Início da animação do menu */
+ul:hover li a {
+    transform: scale(1.5);
+    opacity: 0.5;
+    filter: blur(1px);
+}
+
+/* Efeito quando o mouse está sobre a lista de menu */
+ul li a:hover {
+    transform: scale(2);
+    opacity: 1;
+    filter: blur(0);
+    color: #fff;
+}
+
+/* Final da estilização do cabeçalho */
+
+/* Início da estilização dos botões das redes sociais */
+.titulo {
+    width: 500px;
+    height: auto;
+    top: 150px;
+    left: 490px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: rgb(109, 106, 106);
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+#texto {
+    color: #fff;
+}
+
+.caixaContato {
+    width: 85%;
+    height: 200px;
+    top: 200px;
+    left: 200px;
+    align-items: center;
+    position: relative;
+    background-color: transparent;
+}
+
+.contato {
+    width: 90px;
+    height: 90px;
+    display: inline-block;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 100px;
+    position: relative;
+    background-color: transparent;
+    backdrop-filter: blur(0px);
+    border-radius: 30px;
+    transition: all 0.3s;
+    border: 1px solid rgba(124, 121, 121, 0.466);
+}
+
+.BT {
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    border-radius: 30px;
+    pointer-events: none;
+    background: rgb(109, 106, 106);
+    z-index: -1;
+    transition: all 0.3s;
+}
+
+/* Animação para quando o mouse estiver em cima do botão */
+.contato:hover .BT {
+    transform: rotate(45deg);
+    transform-origin: bottom;
+}
+
+.contato:hover {
+    background-color: rgba(156, 156, 156, 0.897);
+    backdrop-filter: blur(4px);
+}
+
+.contato img {
+    width: 40px;
+    height: auto;
+}
+
+/* Final da animação dos botões que encaminham para minhas redes sociais */
+
+/* Estilização simples da caixa de formulário */
+.form {
+    top: 200px;
+    width: 500px;
+    height: 200px;
+    display: flex;
+    position: relative;
+    margin: auto;
+    padding: 20px;
+    background-color: rgb(109, 106, 106);
+    border-radius: 10px;
+}
+
+/* Estilização da caixa de mensagem */
+#message {
+    width: 200px;
+    height: 100px;
+    top: 20px;
+    right: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(10, 10, 10);
+    text-align: center;
+    padding: 10px;
+    position: absolute;
+    display: inline-block;
+    resize: none;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5), 0 0 20px rgba(0, 0, 5);
+    border-radius: 5px;
+    z-index: 1;
+}
+
+/* Estilização da caixa de email */
+#email {
+    width: 220px;
+    height: 40px;
+    top: 95px;
+    left: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    color: black;
+    text-align: center;
+    position: absolute;
+    display: inline-block;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5), 0 0 20px rgba(0, 0, 5);
+    border-radius: 5px;
+}
+
+/* Estilização da caixa de nome */
+#name {
+    width: 220px;
+    height: 40px;
+    top: 20px;
+    left: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    color: black;
+    text-align: center;
+    position: absolute;
+    display: inline-block;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5), 0 0 20px rgba(0, 0, 5);
+    border-radius: 5px;
+}
+
+/* Estilização do botão enviar */
+.button {
+    height: 40px;
+    width: 90px;
+    top: 170px;
+    left: 220px;
+    font-family: 'Courier New', Courier, monospace;
+    position: absolute;
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.5), 0 0 10px rgba(0, 0, 5);
+}

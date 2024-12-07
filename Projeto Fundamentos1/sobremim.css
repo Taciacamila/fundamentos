@@ -1,0 +1,138 @@
+body{
+    background-color: blanchedalmond;
+ }
+  
+ /*Inicio da estilização do cabeçalho*/
+ .cabecalho {
+    position: fixed;
+    display: inline-block;
+    top: 0;
+    left: 0;
+    background-color:rgb(109, 106, 106);
+    margin: 0;
+    height: 90px;
+    width: 100%;
+    
+  
+ }
+  
+ /*Orientação da lista e menu*/
+  
+ #menu {
+  
+    position: fixed;
+    top: 2px;
+    left: 15px;
+    display: flex;
+    height: 90px;
+  
+ }
+ /*Orientação da lista e menu*/
+ .listaMenu {
+  
+    display: block;
+    text-align: center;
+    top: 9px;
+    position: relative;
+    text-transform: uppercase;
+    transition: 0.5s;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 25px;
+  
+    
+ }
+ /*Orientação da lista e menu*/
+ .listaMenu li {
+  
+    display: inline-block;
+    margin-right: 90px;
+    text-decoration: none;
+  
+ }
+ /* Inicio da  animação do menu */
+ ul li a{
+    color: #fff;
+    text-decoration: none;
+ }
+  
+ /*Efeito para q quando por o mouseme cima da lista menu eles ficarem um pouco  mais pequenos e desfoque se o omouse tiver em cima ele se destaque*/
+  
+ ul:hover li a {
+  
+    transform: scale(1.5);
+    opacity: 0.5;
+    filter: blur(1px);
+    text-decoration: none;
+  
+ }
+  
+ ul li a:hover {
+  
+    transform: scale(2);
+    opacity: 1;
+    filter:blur(0);
+    color:#fff;
+    text-decoration: none;
+  
+ }
+ /* Final da animação menu*/
+  
+  
+ .container {
+    top: 100px;
+    left: 90px;
+    position: fixed;
+    width: 400px;
+    height: 500px;
+    border-radius: 10px;
+    border-radius: 10px;
+    backdrop-filter: blur(55px);
+    padding: 0%;
+ }
+ /*Estilo e tamanho de cada foto*/
+ #fotoPerfil {
+  
+    width: 200px;
+    height: 250px;
+    border-radius: 5px;
+    padding: 0%;
+    margin: 0%;
+  
+ }
+  
+ #fotoperfil {
+  
+    top: 250px;
+    width: 200px;
+    height: 250px;
+    border-radius: 5px;
+    position: fixed;
+    padding: 0%;
+    margin: 0%;
+    left: 200px;
+  
+ }
+  
+ /* Posição e estilo dos paragrafos que falam sobre mim*/
+ .priparagrafo {
+  
+    top: 100px;
+    left: 320px;
+    position: fixed;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+  
+ }
+  
+ .segparagrafo {
+    top:  320px;
+    left: 520px;
+    position: fixed;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+ }
+  
+ p::first-letter{
+  
+    font-size: 32px;/*aumentar o tamanho apenas da primra letra de cada pa-rargrafo*/
+ }

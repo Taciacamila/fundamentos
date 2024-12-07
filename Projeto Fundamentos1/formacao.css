@@ -1,0 +1,105 @@
+body {
+    background-color: blanchedalmond;
+}
+
+/* Estilo para a barra de rolagem */
+::-webkit-scrollbar {
+    width: 0; /* Largura da barra de rolagem */
+}
+
+/* Início da estilização do cabeçalho */
+.cabecalho {
+    position: fixed;
+    display: inline-block;
+    top: 0;
+    left: 0;
+    background-color: rgb(109, 106, 106);
+    margin: 0;
+    height: 90px;
+    width: 100%;
+}
+
+/* Orientação da lista e menu */
+#menu {
+    position: fixed;
+    top: 2px;
+    left: 15px;
+    display: flex;
+    height: 90px;
+}
+
+/* Estilo da lista de menu */
+.listaMenu {
+    display: block;
+    text-align: center;
+    top: 9px;
+    position: relative;
+    text-transform: uppercase;
+    transition: 0.5s;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 25px;
+}
+
+.listaMenu li {
+    display: inline-block;
+    margin-right: 90px;
+    text-decoration: none;
+}
+
+/* Início da animação do menu */
+ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+ul:hover li a {
+    transform: scale(1.5);
+    opacity: 0.5;
+    filter: blur(1px);
+}
+
+/* Efeito quando o mouse está sobre a lista de menu */
+ul li a:hover {
+    transform: scale(2);
+    opacity: 1;
+    filter: blur(0);
+    color: #fff;
+}
+
+/* Final da animação do menu */
+
+/* Estilização da caixa */
+.caixa {
+    top: 100px;
+    position: relative;
+    background-color: rgba(231, 213, 213, 0.438);
+    border-radius: 25px;
+    z-index: -1;
+}
+
+/* Posição da imagem dos certificados */
+.caixa img {
+    top: -40px;
+    left: 15px;
+    margin: 5px;
+    padding: 0;
+    position: relative;
+    display: block;
+}
+
+/* Posição e estilização dos parágrafos */
+.caixa p {
+    top: 35px;
+    left: 23%;
+    position: relative;
+    display: flex;
+    font-size: large;
+}
+
+/* Posição e estilização do título de cada certificado */
+#titulo {
+    top: 25px;
+    left: 23%;
+    position: relative;
+    display: flex;
+}
